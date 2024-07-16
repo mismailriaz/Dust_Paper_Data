@@ -1,0 +1,87 @@
+'reinit'
+'open out17.ctl '
+
+'set gxout shaded'
+*'set mpdraw off'
+*'set mpdset mres'
+*'set background white'
+*'set map color 1 1'
+
+*D1
+**'set lat 5.00 55.00'
+**'set lon -20.00 65.00'
+
+*D2
+*'set lat 12.00 32.00'
+*'set lon 32.00 60.00'
+
+
+*Axis control 1 color, 4 tickness 0.12 size 
+**'set xlint 3'
+**'set ylint 3'
+**'set xlopts 1 2 0.22'
+**'set ylopts 1 2 0.22'
+
+**'set vpage 2.0 8.0 1.0 7.0'
+*'set vpage 0.5 5.5 2 7'
+
+*'set parea 0.75 10.0 0.5 8.0'
+
+**'set grid off'
+**'set grads off'
+
+**********************
+'set rgb 16 0 0 255'
+'set rgb 17 0 54 255'
+'set rgb 18 0 108 255'
+'set rgb 19 0 162 255'
+'set rgb 20 0 209 255'
+'set rgb 21 0 253 248'
+'set rgb 22 2 237 197'
+'set rgb 23 4 220 146'
+'set rgb 24 5 204 95'
+'set rgb 25 7 188 44'
+'set rgb 26 30 186 14'
+'set rgb 27 124 215 8'
+'set rgb 28 175 230 5'
+'set rgb 30 226 246 2'
+'set rgb 31 255 247 0'
+'set rgb 32 255 228 0'
+'set rgb 33 255 209 0'
+'set rgb 34 255 190 0'
+'set rgb 35 255 173 0'
+'set rgb 36 255 145 0'
+'set rgb 37 255 110 0'
+'set rgb 38 255 75 0'
+'set rgb 39 224 0 25'
+'set rgb 40 194 0 49'
+'set rgb 41 158 0 78'
+'set rgb 42 124 0 107'
+'set rgb 43 87 0 136'
+'set rgb 44 0 0 0'
+
+*'set clevs 50 100 150 200 250 300 350 400 450 500 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60'
+*'set ccols 16 17 18 19 20 21 22 23 24 26 27 28 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44'
+
+**'set clevs 25 50 75 100 150 200 250 300 350 400 450 500'
+**'set ccols 0 31 32 33 34 35 36 37 38 39 40 41 42 43'
+
+'define sumconcs = DUST_1*0'
+il=1
+while (il<= 10)
+'set  z 'il
+'define size10 = ave(DUST_1+DUST_2+DUST_3+DUST_4+DUST_5,t=2,t=23)/1000'
+'define sumconcs = sumconcs+size10'
+il=il+1
+endwhile
+'d smth9(sumconcs)'
+'run cbar'
+'set strsiz 0.22'
+'draw string 4.7 8.0 Dust Concentration 1000-100 hPa: 17 Jan 2019'
+*'set strsiz 0.27'
+*'draw string 9.95 0.55 C'
+foutpng='Concen-all-level-17Jan2019.png'
+fouteps='Concen-all-level-17Jan2019.eps'
+'printim 'foutpng' png  white'
+*'gxprint 'fouteps' white'
+return

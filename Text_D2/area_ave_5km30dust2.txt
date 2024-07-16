@@ -1,0 +1,162 @@
+'reinit'
+
+'open outall-jan2019.ctl'
+
+i=1
+while(i<=168)
+'set t 'i
+
+'define ap1=aave(DUST_2,lon=38.70,lon=38.75,lat=31.65,lat=31.70)'
+'d ap1'
+Help1=subwrd(result,4)
+res= write (Turaif.txt, Help1)
+
+'define ap2 = aave(DUST_2,lon=37.25,lon=37.30,lat=31.38,lat=31.43)'
+'d ap2'
+Help2=subwrd(result,4)
+res= write (Guriat.txt, Help2)
+
+'define ap3 = aave(DUST_2,lon=41.12,lon=41.17,lat=30.88,lat=30.93)'
+'d ap3'
+Help3=subwrd(result,4)
+res= write (Arar.txt, Help3)
+
+'define ap4 = aave(DUST_2,lon=40.08,lon=40.13,lat=29.75,lat=29.80)'
+'d ap4'
+Help4=subwrd(result,4)
+res= write (Al_Jouf.txt, Help4)
+
+'define ap5 = aave(DUST_2,lon=43.47,lon=43.52,lat=29.60,lat=29.65)'
+'d ap5'
+Help5=subwrd(result,4)
+res= write (Rafha.txt, Help5)
+
+'define ap6 = aave(DUST_2,lon=36.58,lon=36.63,lat=28.35,lat=28.40)'
+'d ap6'
+Help6=subwrd(result,4)
+res= write (Tabuk.txt, Help6)
+
+'define ap7 = aave(DUST_2,lon=46.10,lon=46.15,lat=28.30,lat=28.35)'
+'d ap7'
+Help7=subwrd(result,4)
+res= write (AlQaysuma.txt, Help7)
+
+'define ap8 = aave(DUST_2,lon=41.67,lon=41.72,lat=27.42,lat=27.47)'
+'d ap8'
+Help8=subwrd(result,4)
+res= write (Hail.txt, Help8)
+
+'define ap9 = aave(DUST_2,lon=43.75,lon=43.80,lat=26.28,lat=26.33)'
+'d ap9'
+Help9=subwrd(result,4)
+res= write (Gassim.txt, Help9)
+
+'define ap10 = aave(DUST_2,lon=50.14,lon=50.17,lat=26.22,lat=26.27)'
+'d ap10'
+Help10=subwrd(result,4)
+res= write (Dhahran.txt, Help10)
+
+'define ap11 = aave(DUST_2,lon=36.45,lon=36.50,lat=26.17,lat=26.22)'
+'d ap11'
+Help11=subwrd(result,4)
+res= write (Wejh.txt, Help11)
+
+'define ap12 = aave(DUST_2,lon=49.47,lon=49.52,lat=25.28,lat=25.33)'
+'d ap12'
+Help12=subwrd(result,4)
+res= write (Al_Ahsa.txt, Help12)
+
+'define ap13 = aave(DUST_2,lon=46.70,lon=46.75,lat=24.90,lat=24.95)'
+'d ap13'
+Help13=subwrd(result,4)
+res= write (RiyadN.txt, Help13)
+
+'define ap14 = aave(DUST_2,lon=46.71,lon=46.76,lat=24.68,lat=24.73)'
+'d ap14'
+Help14=subwrd(result,4)
+res= write (RiyadO.txt, Help14)
+
+'define ap15 = aave(DUST_2,lon=39.68,lon=39.73,lat=24.51,lat=24.56)'
+'d ap15'
+Help15=subwrd(result,4)
+res= write (Madina.txt, Help15)
+
+'define ap16 = aave(DUST_2,lon=38.04,lon=38.09,lat=24.12,lat=24.17)'
+'d ap16'
+Help16=subwrd(result,4)
+res= write (Yenbo.txt, Help16)
+
+'define ap17 = aave(DUST_2,lon=39.15,lon=39.20,lat=21.68,lat=21.73)'
+'d ap17'
+Help17=subwrd(result,4)
+res= write (Jeddah.txt, Help17)
+
+'define ap18 = aave(DUST_2,lon=40.52,lon=40.57,lat=21.45,lat=21.50)'
+'d ap18'
+Help18=subwrd(result,4)
+res= write (Taif.txt, Help18)
+
+'define ap19 = aave(DUST_2,lon=39.77,lon=39.82,lat=21.40,lat=21.45)'
+'d ap19'
+Help19=subwrd(result,4)
+res= write (Makkah.txt, Help19)
+
+'define ap20 = aave(DUST_2,lon=41.62,lon=41.67,lat=20.26,lat=20.31)'
+'d ap20'
+Help20=subwrd(result,4)
+res= write (Al_Baha.txt, Help20)
+
+'define ap21 = aave(DUST_2,lon=42.58,lon=42.63,lat=19.97,lat=20.02)'
+'d ap21'
+Help21=subwrd(result,4)
+res= write (Bisha.txt, Help21)
+
+'define ap22 = aave(DUST_2,lon=42.78,lon=42.83,lat=18.27,lat=18.32)'
+'d ap22'
+Help22=subwrd(result,4)
+res= write (MusaitKh.txt, Help22)
+
+'define ap23 = aave(DUST_2,lon=42.63,lon=42.68,lat=18.20,lat=18.25)'
+'d ap23'
+Help23=subwrd(result,4)
+res= write (Abha.txt, Help23)
+
+'define ap24 = aave(DUST_2,lon=44.38,lon=44.43,lat=17.58,lat=17.63)'
+'d ap24'
+Help24=subwrd(result,4)
+res= write (Najrun.txt, Help24)
+
+'define ap25 = aave(DUST_2,lon=47.10,lon=47.15,lat=17.45,lat=17.50)'
+'d ap25'
+Help25=subwrd(result,4)
+res= write (Sharurah.txt, Help25)
+
+'define ap26 = aave(DUST_2,lon=42.55,lon=42.60,lat=16.88,lat=16.93)'
+'d ap26'
+Help26=subwrd(result,4)
+res= write (Gizan.txt, Help26)
+
+'define ap27 = aave(DUST_2,lon=45.50,lon=45.55,lat=27.88,lat=27.93)'
+'d ap27'
+Help27=subwrd(result,4)
+res= write (HaferAlBat.txt, Help27)
+
+'define ap28 = aave(DUST_2,lon=45.10,lon=45.15,lat=20.28,lat=20.33)'
+'d ap28'
+Help28=subwrd(result,4)
+res= write (AlDawaser.txt, Help28)
+
+'define ap29 = aave(DUST_2,lon=49.78,lon=49.83,lat=26.48,lat=26.53)'
+'d ap29'
+Help29=subwrd(result,4)
+res= write (Dammam.txt, Help29)
+
+'define ap30 = aave(DUST_2,lon=45.35,lon=45.40,lat=20.25,lat=20.30)'
+'d ap30'
+Help30=subwrd(result,4)
+res= write (Sulayel.txt, Help30)
+
+i=i+1
+endwhile
+return
+
